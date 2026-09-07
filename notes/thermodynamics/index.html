@@ -45,7 +45,13 @@ h1, h2, h3, h4, h5, h6 {
 :is(h1, h2, h3, h4, h5, h6) + :is(a, p, ul, ol) {
     margin-top: 2px;
 }
+:is(h1, h2, h3, h4, h5, h6) + :is(h1, h2, h3, h4, h5, h6) {
+    margin-top: 2px;
+}
 :is(h1, h2, h3, h4, h5, h6):has(+ :is(a, p, ul, ol)) {
+    margin-bottom: 2px;
+}
+:is(h1, h2, h3, h4, h5, h6):has(+ :is(h1, h2, h3, h4, h5, h6)) {
     margin-bottom: 2px;
 }
 a {
@@ -72,11 +78,11 @@ blockquote {
     margin-right: 8px;
 }
 .latex {
-    width: 100%;
-    align-self: center;
+  margin-left: 24px;
+  margin-right: 100%;
 }
 .inline-latex {
-    transform: translateY(3px);
+  vertical-align: middle;
 }
 .toc {
     background: var(--bg_1, darkgray);
@@ -508,4 +514,4 @@ window.addEventListener("DOMContentLoaded", (event) => {
     drawer_toggle.onclick = toggleDrawer;
 })
 
-</script></head> <body> <main class="content" role="main"> <h1 id="thermodynamics"><a class="heading-anchor" href="#thermodynamics">#</a> thermodynamics</h1> <div class="toc"> <ul> <li><a href="#thermodynamics">thermodynamics</a></li> </ul> </div> <p>thermodynamics deals with macroscopic systems (those with a lot of molecules) as opposed to microscopic ones (those with just a few molecules). </p> <p>the laws of thermodynamics only apply when the system is in <a class="wikilink" href="/notes/equilibrium/">equilibrium</a> or moves from one equilibrium state to another. </p> <p>thermodynamics does not concern itself with the “how?” and the “what rate?”, only caring about the initial and final states.</p> <p>#todo </p> </main> </body> </html>
+</script></head> <body> <main class="content" role="main"> <h1 id="thermodynamics"><a class="heading-anchor" href="#thermodynamics">#</a> thermodynamics</h1> <div class="toc"> <ul> <li><a href="#thermodynamics">thermodynamics</a><ul> <li><a href="#fancy-words">fancy words</a></li> </ul> </li> </ul> </div> <p>thermodynamics deals with macroscopic systems (those with a lot of molecules) as opposed to microscopic ones (those with just a few molecules). </p> <p>the laws of thermodynamics only apply when the system is in <a class="wikilink" href="/notes/equilibrium/">equilibrium</a> or moves from one equilibrium state to another. </p> <p>thermodynamics does not concern itself with the “how?” and the “what rate?”, only caring about the initial and final states.</p> <h2 id="fancy-words"><a class="heading-anchor" href="#fancy-words">#</a> fancy words</h2> <p>#todo </p> </main> </body> </html>

@@ -45,7 +45,13 @@ h1, h2, h3, h4, h5, h6 {
 :is(h1, h2, h3, h4, h5, h6) + :is(a, p, ul, ol) {
     margin-top: 2px;
 }
+:is(h1, h2, h3, h4, h5, h6) + :is(h1, h2, h3, h4, h5, h6) {
+    margin-top: 2px;
+}
 :is(h1, h2, h3, h4, h5, h6):has(+ :is(a, p, ul, ol)) {
+    margin-bottom: 2px;
+}
+:is(h1, h2, h3, h4, h5, h6):has(+ :is(h1, h2, h3, h4, h5, h6)) {
     margin-bottom: 2px;
 }
 a {
@@ -72,11 +78,11 @@ blockquote {
     margin-right: 8px;
 }
 .latex {
-    width: 100%;
-    align-self: center;
+  margin-left: 24px;
+  margin-right: 100%;
 }
 .inline-latex {
-    transform: translateY(3px);
+  vertical-align: middle;
 }
 .toc {
     background: var(--bg_1, darkgray);

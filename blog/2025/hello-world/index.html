@@ -130,7 +130,13 @@ h1, h2, h3, h4, h5, h6 {
 :is(h1, h2, h3, h4, h5, h6) + :is(a, p, ul, ol) {
     margin-top: 2px;
 }
+:is(h1, h2, h3, h4, h5, h6) + :is(h1, h2, h3, h4, h5, h6) {
+    margin-top: 2px;
+}
 :is(h1, h2, h3, h4, h5, h6):has(+ :is(a, p, ul, ol)) {
+    margin-bottom: 2px;
+}
+:is(h1, h2, h3, h4, h5, h6):has(+ :is(h1, h2, h3, h4, h5, h6)) {
     margin-bottom: 2px;
 }
 a {
@@ -157,11 +163,11 @@ blockquote {
     margin-right: 8px;
 }
 .latex {
-    width: 100%;
-    align-self: center;
+  margin-left: 24px;
+  margin-right: 100%;
 }
 .inline-latex {
-    transform: translateY(3px);
+  vertical-align: middle;
 }
 .toc {
     background: var(--bg_1, darkgray);
@@ -623,6 +629,6 @@ window.addEventListener("DOMContentLoaded", (event) => {
                     ~0 min read \\
                 
                 hello world! this is a little test blog post. [insert mad scientist laugh here]
-            </div> <div class="meta"> <div class="tags"> <code>test</code> </div> </div> </div> <br/> <p>Hello world! this is a <code>te$t</code>.</p> <p>The qu’ick b.row-n fo—x ju_mpe<em>d ov</em>er <strong>the</strong> lazY DOg. <img alt="\Sigma" class="inline-latex" decoding="async" height="15.68" loading="lazy" src="d65d75b1e6562713a3936bb38fdfe6832fb5b96c946de58f7ce0992057665aa8.svg" width="15.32"/> foobar inline</p> <img alt="\int_{-1}^{1}f(x)dx=0" class="latex" decoding="async" height="57.25" loading="lazy" src="ead90099c9c6c94e4342431d363c9b17d225898723ec86c4da926277617760e6.svg" width="144.26"/> <div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">os</span>
+            </div> <div class="meta"> <div class="tags"> <code>test</code> </div> </div> </div> <br/> <p>Hello world! this is a <code>te$t</code>.</p> <p>The qu’ick b.row-n fo—x ju_mpe<em>d ov</em>er <strong>the</strong> lazY DOg. <img alt="\Sigma" class="inline-latex" decoding="async" height="13.06" loading="lazy" src="1507b0cceb77d1794b2374fc441dae582c1a8971748e3c3c83cfff5ea48663ea.svg" style="vertical-align: middle" width="11.44"/> foobar inline</p> <img alt="\int_{-1}^{1}f(x)dx=0" class="latex" decoding="async" height="56.25" loading="lazy" src="9e5648d764f6aeb0e096ec20b5cf76986fb5f9eb3a5ca17d25214da70adc1bc0.svg" width="142.08"/> <div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">os</span>
 <span class="n">os</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="vm">__file__</span><span class="p">)</span>  <span class="c1"># yes.</span>
 </pre></div> </main> </body> </html>
