@@ -1,89 +1,4 @@
-<!DOCTYPE html> <html lang="en"> <head> <meta charset="utf-8"/> <title>hello world - n3rdium's blog</title><style>pre { line-height: 125%; }
-td.linenos .normal { color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px; }
-span.linenos { color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px; }
-td.linenos .special { color: #000000; background-color: #ffffc0; padding-left: 5px; padding-right: 5px; }
-span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 5px; padding-right: 5px; }
-.highlight .hll { background-color: #ebdbb2 }
-.highlight { background: #282828; color: #DDD }
-.highlight .c { color: #928374; font-style: italic } /* Comment */
-.highlight .err { color: #282828; background-color: #FB4934 } /* Error */
-.highlight .esc { color: #DDD } /* Escape */
-.highlight .g { color: #DDD } /* Generic */
-.highlight .k { color: #FB4934 } /* Keyword */
-.highlight .l { color: #DDD } /* Literal */
-.highlight .n { color: #DDD } /* Name */
-.highlight .o { color: #DDD } /* Operator */
-.highlight .x { color: #DDD } /* Other */
-.highlight .p { color: #DDD } /* Punctuation */
-.highlight .ch { color: #928374; font-style: italic } /* Comment.Hashbang */
-.highlight .cm { color: #928374; font-style: italic } /* Comment.Multiline */
-.highlight .c-PreProc { color: #8EC07C; font-style: italic } /* Comment.PreProc */
-.highlight .cp { color: #928374; font-style: italic } /* Comment.Preproc */
-.highlight .cpf { color: #928374; font-style: italic } /* Comment.PreprocFile */
-.highlight .c1 { color: #928374; font-style: italic } /* Comment.Single */
-.highlight .cs { color: #EBDBB2; font-weight: bold; font-style: italic } /* Comment.Special */
-.highlight .gd { color: #282828; background-color: #FB4934 } /* Generic.Deleted */
-.highlight .ge { color: #DDD; font-style: italic } /* Generic.Emph */
-.highlight .ges { color: #DDD; font-weight: bold; font-style: italic } /* Generic.EmphStrong */
-.highlight .gr { color: #FB4934 } /* Generic.Error */
-.highlight .gh { color: #EBDBB2; font-weight: bold } /* Generic.Heading */
-.highlight .gi { color: #282828; background-color: #B8BB26 } /* Generic.Inserted */
-.highlight .go { color: #F2E5BC } /* Generic.Output */
-.highlight .gp { color: #A89984 } /* Generic.Prompt */
-.highlight .gs { color: #DDD; font-weight: bold } /* Generic.Strong */
-.highlight .gu { color: #EBDBB2; text-decoration: underline } /* Generic.Subheading */
-.highlight .gt { color: #FB4934 } /* Generic.Traceback */
-.highlight .kc { color: #FB4934 } /* Keyword.Constant */
-.highlight .kd { color: #FB4934 } /* Keyword.Declaration */
-.highlight .kn { color: #FB4934 } /* Keyword.Namespace */
-.highlight .kp { color: #FB4934 } /* Keyword.Pseudo */
-.highlight .kr { color: #FB4934 } /* Keyword.Reserved */
-.highlight .kt { color: #FB4934 } /* Keyword.Type */
-.highlight .ld { color: #DDD } /* Literal.Date */
-.highlight .m { color: #D3869B } /* Literal.Number */
-.highlight .s { color: #B8BB26 } /* Literal.String */
-.highlight .na { color: #FABD2F } /* Name.Attribute */
-.highlight .nb { color: #FE8019 } /* Name.Builtin */
-.highlight .nc { color: #8EC07C } /* Name.Class */
-.highlight .no { color: #D3869B } /* Name.Constant */
-.highlight .nd { color: #FB4934 } /* Name.Decorator */
-.highlight .ni { color: #DDD } /* Name.Entity */
-.highlight .ne { color: #FB4934 } /* Name.Exception */
-.highlight .nf { color: #8EC07C } /* Name.Function */
-.highlight .nl { color: #DDD } /* Name.Label */
-.highlight .nn { color: #8EC07C } /* Name.Namespace */
-.highlight .nx { color: #DDD } /* Name.Other */
-.highlight .py { color: #DDD } /* Name.Property */
-.highlight .nt { color: #8EC07C } /* Name.Tag */
-.highlight .nv { color: #83A598 } /* Name.Variable */
-.highlight .ow { color: #FB4934 } /* Operator.Word */
-.highlight .pm { color: #DDD } /* Punctuation.Marker */
-.highlight .w { color: #DDD } /* Text.Whitespace */
-.highlight .mb { color: #D3869B } /* Literal.Number.Bin */
-.highlight .mf { color: #D3869B } /* Literal.Number.Float */
-.highlight .mh { color: #D3869B } /* Literal.Number.Hex */
-.highlight .mi { color: #D3869B } /* Literal.Number.Integer */
-.highlight .mo { color: #D3869B } /* Literal.Number.Oct */
-.highlight .sa { color: #B8BB26 } /* Literal.String.Affix */
-.highlight .sb { color: #B8BB26 } /* Literal.String.Backtick */
-.highlight .sc { color: #B8BB26 } /* Literal.String.Char */
-.highlight .dl { color: #B8BB26 } /* Literal.String.Delimiter */
-.highlight .sd { color: #B8BB26 } /* Literal.String.Doc */
-.highlight .s2 { color: #B8BB26 } /* Literal.String.Double */
-.highlight .se { color: #FE8019 } /* Literal.String.Escape */
-.highlight .sh { color: #B8BB26 } /* Literal.String.Heredoc */
-.highlight .si { color: #B8BB26 } /* Literal.String.Interpol */
-.highlight .sx { color: #B8BB26 } /* Literal.String.Other */
-.highlight .sr { color: #B8BB26 } /* Literal.String.Regex */
-.highlight .s1 { color: #B8BB26 } /* Literal.String.Single */
-.highlight .ss { color: #B8BB26 } /* Literal.String.Symbol */
-.highlight .bp { color: #FE8019 } /* Name.Builtin.Pseudo */
-.highlight .fm { color: #8EC07C } /* Name.Function.Magic */
-.highlight .vc { color: #83A598 } /* Name.Variable.Class */
-.highlight .vg { color: #83A598 } /* Name.Variable.Global */
-.highlight .vi { color: #83A598 } /* Name.Variable.Instance */
-.highlight .vm { color: #83A598 } /* Name.Variable.Magic */
-.highlight .il { color: #D3869B } /* Literal.Number.Integer.Long */</style><meta charset="utf-8"/> <meta content="hello world! this is a little test blog post. [insert mad scientist laugh here]" name="description"/> <meta content="index, follow" name="robots"/> <meta content="width=device-width, initial-scale=1.0" name="viewport"/> <meta content="n3rdium" name="author"/><style>:root {
+<!DOCTYPE html> <html lang="en"> <head> <meta charset="utf-8"/> <title>hello world - n3rdium's blog</title> <link href="../../../highlight.css" rel="stylesheet"/> <meta charset="utf-8"/> <meta content="hello world! this is a little test blog post. [insert mad scientist laugh here]" name="description"/> <meta content="index, follow" name="robots"/> <meta content="width=device-width, initial-scale=1.0" name="viewport"/> <meta content="n3rdium" name="author"/><style>:root {
     --fg: #ebdbb2;
     --fg4: #a89984;
     --fg3: #bdae93;
@@ -163,7 +78,7 @@ blockquote {
     margin-right: 8px;
 }
 .latex {
-  margin-left: 24px;
+  margin-left: 14px;
   margin-right: 100%;
 }
 .inline-latex {
@@ -629,6 +544,6 @@ window.addEventListener("DOMContentLoaded", (event) => {
                     ~0 min read \\
                 
                 hello world! this is a little test blog post. [insert mad scientist laugh here]
-            </div> <div class="meta"> <div class="tags"> <code>test</code> </div> </div> </div> <br/> <p>Hello world! this is a <code>te$t</code>.</p> <p>The qu’ick b.row-n fo—x ju_mpe<em>d ov</em>er <strong>the</strong> lazY DOg. <img alt="\Sigma" class="inline-latex" decoding="async" height="13.06" loading="lazy" src="1507b0cceb77d1794b2374fc441dae582c1a8971748e3c3c83cfff5ea48663ea.svg" style="vertical-align: middle" width="11.44"/> foobar inline</p> <img alt="\int_{-1}^{1}f(x)dx=0" class="latex" decoding="async" height="56.25" loading="lazy" src="9e5648d764f6aeb0e096ec20b5cf76986fb5f9eb3a5ca17d25214da70adc1bc0.svg" width="142.08"/> <div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">os</span>
+            </div> <div class="meta"> <div class="tags"> <code>test</code> </div> </div> </div> <br/> <p>Hello world! this is a <code>te$t</code>.</p> <p>The qu’ick b.row-n fo—x ju_mpe<em>d ov</em>er <strong>the</strong> lazY DOg. <math alttext="\Sigma" class="inline-latex" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>Σ</mi></mrow></math> foobar inline</p> <math alttext="\int_{-1}^{1}f(x)dx=0" class="latex" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msubsup><mo>∫</mo><mrow><mo>−</mo><mn>1</mn></mrow><mrow><mn>1</mn></mrow></msubsup><mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mi>d</mi><mi>x</mi><mo>=</mo><mn>0</mn></mrow></math> <div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">os</span>
 <span class="n">os</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="vm">__file__</span><span class="p">)</span>  <span class="c1"># yes.</span>
 </pre></div> </main> </body> </html>
