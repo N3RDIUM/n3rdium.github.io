@@ -41,8 +41,7 @@ blockquote {
     margin-right: 8px;
 }
 .latex {
-  margin-left: 14px;
-  margin-right: 100%;
+  width: 100%
 }
 .inline-latex {
   vertical-align: middle;
