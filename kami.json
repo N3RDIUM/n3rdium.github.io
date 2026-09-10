@@ -1,5 +1,12 @@
 {
   "templates": "templates/",
   "preprocessors": {},
-  "postprocessors": {}
+  "postprocessors": {
+    "syntax_highlighter": {
+      "syntax_stylesheet": "css/highlight.css"
+    },
+    "latex_renderer": {
+      "mode": "katex"
+    }
+  }
 }
